@@ -102,3 +102,5 @@ int main()
   ```
 
 ## Output
+no 1
+<img src="https://github.com/fkrnhdyt/uasfikri/blob/main/Screenshot%202022-12-22%20142611.png">
