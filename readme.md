@@ -1,52 +1,51 @@
 # Ujian Akhir Semester 
-<br>Mata Kuliah 	:
-<br> Nama		:
-<br>NIM		:	
+<br>Mata Kuliah &emsp;: Dasar Pemrograman
+<br> Nama	 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	: Fikri Nur Hidayat
+<br>NIM		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;: 1227050046
 <br>Jurusan		:[Teknik Informatika](http://if.uinsgd.ac.id/) [UIN Sunan Gunung Djati Bandung](https://uinsgd.ac.id/) 
 
 ## Deskripsi Umum
-
-
+Pada soal no 1
+<br>Menjelaskan tentang  mencari nilai menggunakan array 2 dimensi dengan dibalikannya yg semulanya nilai baris dibalik menjadi kolom dan nilai kolom mejadi baris.
+<br>Sedangkan pada no 2
+<br>Menjelaskan tentang cara mencari nilai deret bilangan matematika yang tidak habis dibagi 3,5 dan 7 menggunakan array 2 dimensi
 ## Source Code
-soal no 1
+Soal no 1
  ```cpp
-  #include <iostream>
+#include <iostream>
 #include <conio.h>
 using namespace std;
 int main()
 {
-    //1. input banyaknya baris dan kolom pakai dimensi dua
-    //isi dengan nilai
-    //setelah diisi tukar baris dan kolom
     int baris, kolom;
     cout << "masukkan banyak baris : ";cin >> baris;
     cout << "masukkan banyak kolom : ";cin >> kolom;
-    const int baris_R = baris;
-    const int kolom_R = kolom;
-    int array[baris_R][kolom_R];
-    int tuker[kolom_R][baris_R];
+    const int baris_z = baris;
+    const int kolom_z = kolom;
+    int array[baris_z][kolom_z];
+    int tuker[kolom_z][baris_z];
     cout << "masukkan nilai : " << endl;
-    for(int i = 0; i < baris_R; i++){
-        for(int j = 0; j < kolom_R; j++){
+    for(int i = 0; i < baris_z; i++){
+        for(int j = 0; j < kolom_z; j++){
             cout << "baris ke-" << i+1 << " kolom ke-" << j+1 << " : ";
             cin >> array[i][j]; 
         }
     }
     cout << "bentuk awal : " << endl;
-    for(int i = 0; i < baris_R; i++){
-        for(int j = 0; j < kolom_R; j++){
+    for(int i = 0; i < baris_z; i++){
+        for(int j = 0; j < kolom_z; j++){
             cout << array[i][j] << " ";
         }
         cout << endl;
     }
-    for(int i = 0; i < baris_R; i++){
-        for(int j = 0; j < kolom_R; j++){
+    for(int i = 0; i < baris_z; i++){
+        for(int j = 0; j < kolom_z; j++){
             tuker[j][i] = array[i][j];
         }
     }
     cout << "bentuk akhir setelah ditukar : " << endl;
-    for(int i = 0; i < kolom_R; i++){
-        for(int j = 0; j < baris_R; j++){
+    for(int i = 0; i < kolom_z; i++){
+        for(int j = 0; j < baris_z; j++){
             cout << tuker[i][j] << " ";
         }
         cout << endl;
@@ -54,9 +53,8 @@ int main()
       
     getch();         
     return 0;
-}
-  ```
-  soal no 2
+}  ```
+  Soal no 2
   ```cpp
   #include <iostream>
 #include <conio.h>
@@ -102,8 +100,8 @@ int main()
   ```
 
 ## Output
-no 1
+No 1
 <img src="https://github.com/fkrnhdyt/uasfikri/blob/main/Screenshot%202022-12-22%20142902.png">
 
-no 2
+No 2
 <img src="https://github.com/fkrnhdyt/uasfikri/blob/main/Screenshot%202022-12-22%20142611.png">
