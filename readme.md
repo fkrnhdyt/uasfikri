@@ -53,7 +53,9 @@ int main()
       
     getch();         
     return 0;
-}  ```
+}  
+```
+  
   Soal no 2
   ```cpp
   #include <iostream>
